@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Nuestro Transbank</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./assets/css/style.css" rel="stylesheet" />
+		<script defer src="./assets/js/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>contáctanos</h1>
+		</header>
+		<main>
+			<form action="" id="sendForm">
+				<div>
+					<label for="username">Nombre <span>*</span></label>
+					<input type="text" name="username" id="username" required />
+				</div>
+				<div>
+					<label for="lastname">Apellido <span>*</span></label>
+					<input type="text" name="lastname" id="lastname" required />
+				</div>
+				<div>
+					<label for="email">Email <span>*</span></label>
+					<input type="email" name="email" id="email" required />
+				</div>
+				<div>
+					<label for="categories">Por favor especifique el motivo <span>*</span></label>
+					<select name="categories" id="categories" required>
+						<option value="">--Seleccione--</option>
+						<option value="option1">Problemas con su Cuenta Online</option>
+						<option value="option2">Restablecer Contraseña</option>
+						<option value="option3">Solicitud de Atención al Cliente</option>
+						<option value="option4">Otro</option>
+					</select>
+				</div>
+				<div>
+					<label for="message">Mensaje <span>*</span></label>
+					<textarea rows="5" cols="25" id="message" required></textarea>
+				</div>
+				<button type="submit" class="btn" id="sendMessage">
+					enviar mensaje
+				</button>
+			</form>
+		</main>
+	</body>
+
+</html>

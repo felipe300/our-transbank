@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	--clr-bg: #f8f9fa;
+	--clr-bg-selection: #2f3236;
+	--clr-bg-btn: #1b8b5a;
+}
+
+body {
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+label span {
+	font-size: 0.7em;
+	vertical-align: top;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+	background-color: var(--clr-bg);
+	border-radius: 0.25em;
+}
+
+.flex {
+	display: flex;
+	justify-items: center;
+	flex-direction: column;
+	gap: 0.5em;
+	width: 100%;
+}
+
+form {
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+form div {
+	margin: 0.3em 0.2em;
+	padding: 0.2em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+}
+
+form input,
+form select {
+	width: 90%;
+	font-size: 0.9em;
+	margin: 0.1em 0;
+	padding: 0.1em;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 5px;
+	border: 1px solid #dfdfdf;
+	border-radius: 2px;
+	margin-right: 2rem;
+	padding: 1rem;
+	padding-right: 2rem;
+}
+
+select option {
+	font-size: .7em;
+	background-color: var(--clr-bg-selection);
+	color: white;
+}
+
+form textarea {
+	width: 90%;
+	font-size: 1.2em;
+}
+
+.btn {
+	width: 83%;
+	margin: 0 0.4em;
+	padding: 0.2em 0.7em;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: var(--clr-bg-btn);
+	color: white;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.7;
+}
+
+@media (min-width:800px) {
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5em;
+	}
+
+	form input,
+	form select {
+		width: 100%;
+	}
+
+	form textarea {
+		width: 100%;
+	}
+
+	.btn {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media (min-width:1000px) {
+	form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3em;
+	}
+
+	form select {
+		width: auto;
+	}
+}
